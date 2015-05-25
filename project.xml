@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<haxedef name="HXCPP_STACK_TRACE"/>
+	<haxedef name="HXCPP_TELEMETRY"/>
+	
+	<meta title="HxScoutTest" package="com.sample.hxscouttest" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="HxScoutTest" />
+
+	<window hardware="true" allow-shaders="true" require-shaders="true" orientation="landscape" antialiasing="0" if="cpp"/>
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="hxtelemetry"/>
+
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<icon path="Assets/openfl.svg" />
+	
+</project>
