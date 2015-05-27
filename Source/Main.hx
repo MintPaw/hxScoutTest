@@ -12,9 +12,8 @@ class Main extends Sprite
 	{
 		super();
 
-		var cfg = new hxtelemetry.HxTelemetry.Config();
-		//cfg.allocations = true;
-		_telemetry = new hxtelemetry.HxTelemetry();
+		openfl.Telemetry.config.app_name = "hxScoutTest";
+		openfl.Telemetry.config.allocations = true;
 		addEventListener(Event.ENTER_FRAME, updateTelemetry);
 	}
 
@@ -23,6 +22,6 @@ class Main extends Sprite
 		_frameCount++;
 
 		trace("frame #" + _frameCount);
-		_telemetry.advance_frame();
+		openfl.Telemetry.hxt.advance_frame();
 	}
 }
